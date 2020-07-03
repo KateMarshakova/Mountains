@@ -2,5 +2,71 @@
   font-family: "Bringin";
   src: url("../fonts/Bringin.ttf") format("truetype");
 }
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+li, ul {
+  list-style: none;
+}
+
+.header {
+  position: relative;
+  background: url("../images/header /bg.png") no-repeat center;
+  background-size: cover;
+  height: 697px;
+}
+.header .header-nav {
+  background-color: rgba(255, 255, 255, 0.32);
+  background-size: cover;
+  height: 87px;
+  position: relative;
+}
+.header .header-nav .nav {
+  padding-top: 31px;
+}
+.header .header-nav .nav .nav-logo {
+  padding-left: 38px;
+  font-family: "Bringin";
+  height: 58px;
+  font-size: 29px;
+  color: #36aeea;
+}
+.header .header-nav .nav .nav-logo span {
+  color: #9daeb6;
+}
+.header .header-nav .nav .nav-menu {
+  padding-right: 39px;
+  padding-left: 0;
+  justify-content: space-between;
+  border-bottom: 2px solid transparent;
+}
+.header .header-nav .nav .nav-menu__item a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #9daeb6;
+  padding-bottom: 8px;
+}
+.header .header-nav .nav .nav-menu__item a:hover {
+  border-bottom: 2px solid #36aeea;
+}
+.header .header-nav .nav .nav-menu__item .active {
+  border-bottom: 2px solid #36aeea;
+}
+.header .header-call {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: #36aeea;
+  border: 3px solid #36aeea;
+  padding: 13px 46px;
+  border-radius: 4px;
+  font-family: "Raleway", sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */

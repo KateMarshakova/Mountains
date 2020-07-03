@@ -3,11 +3,10 @@ $logo-font: 'Bringin'
 $btn-font: 'Raleway', sans-serif
 $hww-font: 'Roboto', sans-serif
 $nav-color: #9daeb6
-$logo-color: #36aeea
 $text-header-info-color: #ffffff
-$btn-color: #56c7ff
+$blue-color: #36aeea
 $title-color: #2c2e37
-$text-color: #949494
+$text-color: #9daeb6
 $love-color: #16b5ef
 $tree-water-color: #0083b3
 $gray-elem-color: #f0f3f6
@@ -16,3 +15,62 @@ $bg-color: #f6f4f4
 @font-face
   font-family: 'Bringin'
   src: url("../fonts/Bringin.ttf") format('truetype')
+
+h1, h2, h3, h4, h5, h6
+  font-style: normal
+  font-weight: 700
+  margin: 0
+  padding: 0
+
+li, ul
+  list-style: none
+
+.header
+  position: relative
+  background: url("../images/header /bg.png") no-repeat center
+  background-size: cover
+  height: 697px
+  .header-nav
+    background-color: rgba(255, 255, 255, 32%)
+    background-size: cover
+    height: 87px
+    position: relative
+    .nav
+      padding-top: 31px
+      .nav-logo
+        padding-left: 38px
+        font-family: $logo-font
+        height: 58px
+        font-size: 29px
+        color: $blue-color
+        span
+          color: $text-color
+      .nav-menu
+        padding-right: 39px
+        padding-left: 0
+        justify-content: space-between
+        border-bottom: 2px solid transparent
+        &__item
+          a
+            text-decoration: none
+            font-family: $main-font
+            font-weight: 700
+            font-size: 12px
+            color: $text-color
+            padding-bottom: 8px
+            &:hover
+              border-bottom: 2px solid $blue-color
+          .active
+            border-bottom: 2px solid $blue-color
+  .header-call
+    text-decoration: none
+    font-size: 12px
+    font-weight: 700
+    color: $blue-color
+    border: 3px solid $blue-color
+    padding: 13px 46px
+    border-radius: 4px
+    font-family: $btn-font
+
+
+
