@@ -14,37 +14,38 @@ li, ul {
 }
 
 .header {
-  position: relative;
   background: url("../images/header /bg.png") no-repeat center;
   background-size: cover;
-  height: 697px;
+  height: 696px;
 }
 .header .header-nav {
   background-color: rgba(255, 255, 255, 0.32);
   background-size: cover;
   height: 87px;
-  position: relative;
 }
-.header .header-nav .nav {
+.header .header-nav .container {
+  max-width: 1170px;
+}
+.header .header-nav .container .nav {
   padding-top: 31px;
 }
-.header .header-nav .nav .nav-logo {
+.header .header-nav .container .nav .nav-logo {
   padding-left: 38px;
   font-family: "Bringin";
   height: 58px;
   font-size: 29px;
   color: #36aeea;
 }
-.header .header-nav .nav .nav-logo span {
+.header .header-nav .container .nav .nav-logo span {
   color: #9daeb6;
 }
-.header .header-nav .nav .nav-menu {
+.header .header-nav .container .nav .nav-menu {
   padding-right: 39px;
   padding-left: 0;
   justify-content: space-between;
   border-bottom: 2px solid transparent;
 }
-.header .header-nav .nav .nav-menu__item a {
+.header .header-nav .container .nav .nav-menu__item a {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -52,21 +53,69 @@ li, ul {
   color: #9daeb6;
   padding-bottom: 8px;
 }
-.header .header-nav .nav .nav-menu__item a:hover {
+.header .header-nav .container .nav .nav-menu__item a:hover {
   border-bottom: 2px solid #36aeea;
 }
-.header .header-nav .nav .nav-menu__item .active {
+.header .header-nav .container .nav .nav-menu__item .active {
   border-bottom: 2px solid #36aeea;
 }
-.header .header-call {
+.header .header-nav .container .header-call {
   text-decoration: none;
   font-size: 12px;
   font-weight: 700;
   color: #36aeea;
   border: 3px solid #36aeea;
-  padding: 13px 46px;
+  padding: 14px 51px;
+  margin-left: 30px;
   border-radius: 4px;
   font-family: "Raleway", sans-serif;
+}
+.header .container {
+  max-width: 1170px;
+}
+.header .container .header-info {
+  background: url("../images/header /arch.png") no-repeat center;
+  height: 326px;
+  width: 1140px;
+  position: relative;
+  top: 131px;
+  left: 15px;
+}
+.header .container .header-info__worlds {
+  padding-top: 40px;
+  padding-left: 20px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+.header .container .header-info__worlds .worlds-maintitle {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 6.5px;
+  position: relative;
+}
+.header .container .header-info__worlds .worlds-title {
+  font-size: 70px;
+  font-family: "Bringin";
+  color: #36aeea;
+  position: absolute;
+  top: 73px;
+}
+.header .container .header-info__worlds .worlds-text {
+  padding-top: 43px;
+  font-size: 18px;
+}
+.header .container .header-info__worlds .worlds-btn {
+  color: #ffffff;
+  background-color: #36aeea;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.12em;
+  padding: 23px 73px;
+  margin-top: 6px;
+}
+.header .container .header-info__worlds .worlds-btn:hover {
+  background-color: #0083b3;
 }
 
 /*# sourceMappingURL=style.css.map */
