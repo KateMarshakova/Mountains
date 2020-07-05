@@ -6,7 +6,7 @@ $nav-color: #9daeb6
 $text-header-info-color: #ffffff
 $blue-color: #36aeea
 $title-color: #2c2e37
-$text-color: #9daeb6
+$text-color: #949494
 $love-color: #16b5ef
 $color-hover: #0083b3
 $gray-elem-color: #f0f3f6
@@ -25,6 +25,11 @@ h1, h2, h3, h4, h5, h6
 
 li, ul
   list-style: none
+
+.btn
+  font-weight: 700
+  font-family: $btn-font
+  letter-spacing: 0.12em
 
 .header
   background: url("../images/header /bg.png") no-repeat center
@@ -82,36 +87,92 @@ li, ul
       position: relative
       top: 131px
       left: 15px
-      &__worlds
+      &__words
         padding-top: 40px
         padding-left: 20px
         color: $text-header-info-color
         font-family: $main-font
-        .worlds-maintitle
+        .words-maintitle
           font-size: 50px
           font-weight: 700
           letter-spacing: 6.5px
           position: relative
-        .worlds-title
+        .words-title
           font-size: 70px
           font-family: $logo-font
           color: $blue-color
           position: absolute
           top: 73px
-        .worlds-text
+        .words-text
           padding-top: 43px
           font-size: 18px
-        .worlds-btn
+        .words-btn
           color: $text-header-info-color
           background-color: $blue-color
           font-size: 14px
-          font-weight: 700
-          font-family: $btn-font
-          letter-spacing: 0.12em
           padding: 23px 73px
           margin-top: 6px
           &:hover
             background-color: $color-hover
+.about
+  background-color: $gray-elem-color
+  height: 670px
+  .container
+    max-width: $cont-size
+    position: relative
+    font-family: $main-font
+    &:before
+      content: ''
+      background: url("../images/about/map.png") no-repeat center center
+      height: 528px
+      width: 1154px
+      display: block
+      position: relative
+      left: 93px
+      top: 26px
+    &:after
+      content: ''
+      background: url("../images/about/legs.png") no-repeat
+      height: 350px
+      width: 350px
+      display: block
+      position: absolute
+      left: 465px
+      top: 279px
+    .about-text
+      position: absolute
+      top: 204px
+      &:before
+        content: ''
+        background: url("../images/line.png") no-repeat
+        height: 10px
+        width: 83px
+        display: block
+        padding-bottom: 43px
+      &__title
+        font-size: 20px
+        color: $title-color
+        font-weight: 700
+        padding-bottom: 17px
+      &__words
+        font-size: 14px
+        color: $text-color
+        padding-bottom: 17px
+        line-height: 26px
+        letter-spacing: 0.02em
+      &__btn
+        color: $text-header-info-color
+        background-color: $blue-color
+        font-size: 12px
+        padding: 11px 25px
+    .about-img
+      position: absolute
+      top: -35px
+      padding-left: 60px
+
+
+
+
 
 
 

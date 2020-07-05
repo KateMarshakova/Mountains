@@ -13,6 +13,12 @@ li, ul {
   list-style: none;
 }
 
+.btn {
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.12em;
+}
+
 .header {
   background: url("../images/header /bg.png") no-repeat center;
   background-size: cover;
@@ -37,7 +43,7 @@ li, ul {
   color: #36aeea;
 }
 .header .header-nav .container .nav .nav-logo span {
-  color: #9daeb6;
+  color: #949494;
 }
 .header .header-nav .container .nav .nav-menu {
   padding-right: 39px;
@@ -50,7 +56,7 @@ li, ul {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 12px;
-  color: #9daeb6;
+  color: #949494;
   padding-bottom: 8px;
 }
 .header .header-nav .container .nav .nav-menu__item a:hover {
@@ -81,41 +87,104 @@ li, ul {
   top: 131px;
   left: 15px;
 }
-.header .container .header-info__worlds {
+.header .container .header-info__words {
   padding-top: 40px;
   padding-left: 20px;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
 }
-.header .container .header-info__worlds .worlds-maintitle {
+.header .container .header-info__words .words-maintitle {
   font-size: 50px;
   font-weight: 700;
   letter-spacing: 6.5px;
   position: relative;
 }
-.header .container .header-info__worlds .worlds-title {
+.header .container .header-info__words .words-title {
   font-size: 70px;
   font-family: "Bringin";
   color: #36aeea;
   position: absolute;
   top: 73px;
 }
-.header .container .header-info__worlds .worlds-text {
+.header .container .header-info__words .words-text {
   padding-top: 43px;
   font-size: 18px;
 }
-.header .container .header-info__worlds .worlds-btn {
+.header .container .header-info__words .words-btn {
   color: #ffffff;
   background-color: #36aeea;
   font-size: 14px;
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 0.12em;
   padding: 23px 73px;
   margin-top: 6px;
 }
-.header .container .header-info__worlds .worlds-btn:hover {
+.header .container .header-info__words .words-btn:hover {
   background-color: #0083b3;
+}
+
+.about {
+  background-color: #f0f3f6;
+  height: 670px;
+}
+.about .container {
+  max-width: 1170px;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+.about .container:before {
+  content: "";
+  background: url("../images/about/map.png") no-repeat center center;
+  height: 528px;
+  width: 1154px;
+  display: block;
+  position: relative;
+  left: 93px;
+  top: 26px;
+}
+.about .container:after {
+  content: "";
+  background: url("../images/about/legs.png") no-repeat;
+  height: 350px;
+  width: 350px;
+  display: block;
+  position: absolute;
+  left: 465px;
+  top: 279px;
+}
+.about .container .about-text {
+  position: absolute;
+  top: 204px;
+}
+.about .container .about-text:before {
+  content: "";
+  background: url("../images/line.png") no-repeat;
+  height: 10px;
+  width: 83px;
+  display: block;
+  padding-bottom: 43px;
+}
+.about .container .about-text__title {
+  font-size: 20px;
+  color: #2c2e37;
+  font-weight: 700;
+  padding-bottom: 17px;
+}
+.about .container .about-text__words {
+  font-size: 14px;
+  color: #949494;
+  padding-bottom: 17px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+.about .container .about-text__btn {
+  color: #ffffff;
+  background-color: #36aeea;
+  font-size: 12px;
+  padding: 11px 25px;
+}
+.about .container .about-img {
+  position: absolute;
+  top: -35px;
+  padding-left: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
