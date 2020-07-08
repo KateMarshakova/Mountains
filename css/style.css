@@ -187,4 +187,32 @@ li, ul {
   padding-left: 60px;
 }
 
+.journal .container {
+  max-width: 1170px;
+}
+.journal .container .journal-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  padding-top: 114px;
+  padding-bottom: 72px;
+}
+.journal .container .journal-title:before {
+  content: "";
+  background: url("../images/line.png") no-repeat;
+  height: 10px;
+  width: 83px;
+  display: block;
+  position: absolute;
+  right: 46%;
+  top: 69px;
+}
+.journal .container .journal-box {
+  display: flex;
+}
+.journal .container .journal-box__third-m {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
