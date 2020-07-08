@@ -17,19 +17,68 @@ $cont-size: 1170px
   font-family: 'Bringin'
   src: url("../fonts/Bringin.ttf") format('truetype')
 
-h1, h2, h3, h4, h5, h6
-  font-style: normal
-  font-weight: 700
-  margin: 0
-  padding: 0
-
 li, ul
   list-style: none
 
-.btn
+%title
+  font-family: $main-font
+  font-weight: 700
+  color: $title-color
+
+%text
+  font-family: $main-font
+  font-weight: 400
+  color: $text-color
+
+%btn
   font-weight: 700
   font-family: $btn-font
   letter-spacing: 0.12em
+  color: $text-header-info-color
+  background-color: $blue-color
+  border: none
+  border-radius: 4px
+
+%before-after
+  content: ''
+  display: block
+  position: absolute
+
+%before-line
+  content: ''
+  background: url("../images/line.png") no-repeat
+  height: 10px
+  width: 83px
+  display: block
+
+%card-title
+  font-size: 11px
+  font-family: $main-font
+  font-weight: 700
+  color: $blue-color
+
+%card-main
+  font-size: 16px
+  font-family: $main-font
+  font-weight: 700
+  letter-spacing: 2px
+
+%card-text
+  font-size: 14px
+  font-family: $main-font
+  font-weight: 400
+  color: $text-color
+
+%card-number
+  font-size: 14px
+  font-family: "Times New Roman"
+
+%before-triangle
+  content: ''
+  border: 13px solid transparent
+  display: block
+  position: absolute
+  z-index: 999
 
 .header
   background: url("../images/header /bg.png") no-repeat center
@@ -107,8 +156,7 @@ li, ul
           padding-top: 43px
           font-size: 18px
         .words-btn
-          color: $text-header-info-color
-          background-color: $blue-color
+          @extend %btn
           font-size: 14px
           padding: 23px 73px
           margin-top: 6px
@@ -131,40 +179,34 @@ li, ul
       left: 93px
       top: 26px
     &:after
-      content: ''
+      @extend %before-after
       background: url("../images/about/legs.png") no-repeat
       height: 350px
       width: 350px
-      display: block
-      position: absolute
       left: 465px
       top: 279px
     .about-text
       position: absolute
       top: 204px
       &:before
-        content: ''
-        background: url("../images/line.png") no-repeat
-        height: 10px
-        width: 83px
-        display: block
+        @extend %before-line
         padding-bottom: 43px
       &__title
+        @extend %title
         font-size: 20px
-        color: $title-color
-        font-weight: 700
         padding-bottom: 17px
       &__words
+        @extend %text
         font-size: 14px
-        color: $text-color
         padding-bottom: 17px
         line-height: 26px
         letter-spacing: 0.02em
       &__btn
-        color: $text-header-info-color
-        background-color: $blue-color
+        @extend %btn
         font-size: 12px
         padding: 11px 25px
+        &:hover
+          background-color: $color-hover
     .about-img
       position: absolute
       top: -35px
@@ -173,24 +215,19 @@ li, ul
   .container
     max-width: $cont-size
     .journal-title
-      font-family: $main-font
+      @extend %title
       font-size: 30px
-      font-weight: 700
       position: relative
       padding-top: 114px
       padding-bottom: 72px
       letter-spacing: 0.05em
       &:before
-        content: ''
-        background: url("../images/line.png") no-repeat
-        height: 10px
-        width: 83px
-        display: block
+        @extend %before-line
         position: absolute
-        right: 46%
+        right: 46.5%
         top: 69px
     .journal-box
-      box-shadow: 2px 0px 90px 23px rgba(6,6,6,0.13)
+      box-shadow: 2px 0 90px 23px rgba(6,6,6,0.13)
       margin-bottom: 91px
       display: flex
       .row
@@ -199,12 +236,10 @@ li, ul
         .first-box
           border: none
           &:before
-            content: ''
+            @extend %before-after
             background: url("../images/journal/heart.png") no-repeat
             height: 81px
             width: 81px
-            display: block
-            position: absolute
             left: 147px
             top: 147px
           .card-img
@@ -215,44 +250,28 @@ li, ul
             padding: 46px 35px 23px
             position: relative
             &:before
-              content: ''
-              border: 13px solid transparent
+              @extend %before-triangle
               border-right: 13px solid #FFFFFF
-              display: block
-              position: absolute
               left: -23px
               top: 51px
-              z-index: 999
             &__title
-              font-size: 11px
-              font-family: $main-font
-              font-weight: 700
-              color: $blue-color
+              @extend %card-title
               padding-bottom: 46px
             &__main
-              font-size: 16px
-              font-family: $main-font
-              font-weight: 700
-              letter-spacing: 2px
+              @extend %card-main
               padding-bottom: 16px
             &__text
-              font-size: 14px
-              font-family: $main-font
-              font-weight: 400
-              color: $text-color
+              @extend %card-text
               padding-bottom: 24px
             &__number
-              font-size: 14px
-              font-family: "Times New Roman"
+              @extend %card-number
         .second-box
           border: none
           &:before
-            content: ''
+            @extend %before-after
             background: url("../images/journal/leaf.png") no-repeat
             height: 65px
             width: 65px
-            display: block
-            position: absolute
             right: 160px
             top: 170px
             z-index: 999
@@ -260,58 +279,40 @@ li, ul
             padding: 46px 54px 20px
             position: relative
             &:before
-              content: ''
-              border: 13px solid transparent
+              @extend %before-triangle
               border-left: 13px solid #FFFFFF
-              display: block
-              position: absolute
               right: -23px
               top: 51px
-              z-index: 999
             &__title
-              font-size: 11px
-              font-family: $main-font
-              font-weight: 700
-              color: $blue-color
+              @extend %card-title
               padding-bottom: 44px
+              color: $color-hover
             &__main
-              font-size: 16px
-              font-family: $main-font
-              font-weight: 700
-              letter-spacing: 2px
-              color: $title-color
+              @extend %card-main
               padding-bottom: 21px
             &__text
-              font-size: 14px
-              font-family: $main-font
-              font-weight: 400
-              color: $text-color
+              @extend %card-text
               padding-bottom: 24px
             &__number
-              font-size: 14px
-              font-family: "Times New Roman"
+              @extend %card-number
           .card-img
             height: 382px
             width: 380px
             border-radius: 0
             position: relative
             &:before
-              content: ''
+              @extend %before-after
               background: url("../images/journal/leaf.png") no-repeat
               height: 65px
               width: 65px
-              display: block
-              position: absolute
       &__third-d
         .third-box
           border: none
           &:before
-            content: ''
+            @extend %before-after
             background: url("../images/journal/drop.png") no-repeat
             height: 74px
             width: 59px
-            display: block
-            position: absolute
             left: 160px
             top: 147px
           .card-img
@@ -323,46 +324,31 @@ li, ul
             padding: 46px 51px 20px
             position: relative
             &:before
-              content: ''
-              border: 13px solid transparent
+              @extend %before-triangle
               border-bottom: 13px solid #FFFFFF
-              display: block
-              position: absolute
               top: -23px
               left: 51px
-              z-index: 999
             &__title
-              font-size: 11px
-              font-family: $main-font
-              font-weight: 700
-              color: $blue-color
+              @extend %card-title
               padding-bottom: 45px
+              color: $color-hover
             &__main
-              font-size: 16px
-              font-family: $main-font
-              font-weight: 700
-              letter-spacing: 2px
+              @extend %card-main
               padding-bottom: 45px
             &__text
-              font-size: 14px
-              font-family: $main-font
-              font-weight: 400
-              color: $text-color
+              @extend %card-text
               padding-bottom: 24px
             &__number
-              font-size: 14px
-              font-family: "Times New Roman"
+              @extend %card-number
       &__third-m
         display: none
         .third-box
           border: none
           &:before
-            content: ''
+            @extend %before-after
             background: url("../images/journal/drop.png") no-repeat
             height: 74px
             width: 59px
-            display: block
-            position: absolute
             left: 160px
             top: 147px
           .card-img
@@ -373,35 +359,22 @@ li, ul
             padding: 46px 51px 20px
             position: relative
             &:before
-              content: ''
-              border: 13px solid transparent
+              @extend %before-triangle
               border-right: 13px solid #FFFFFF
-              display: block
-              position: absolute
               left: -23px
               top: 51px
-              z-index: 999
             &__title
-              font-size: 11px
-              font-family: $main-font
-              font-weight: 700
-              color: $blue-color
+              @extend %card-title
               padding-bottom: 45px
+              color: $color-hover
             &__main
-              font-size: 16px
-              font-family: $main-font
-              font-weight: 700
-              letter-spacing: 2px
+              @extend %card-main
               padding-bottom: 45px
             &__text
-              font-size: 14px
-              font-family: $main-font
-              font-weight: 400
-              color: $text-color
+              @extend %card-text
               padding-bottom: 24px
             &__number
-              font-size: 14px
-              font-family: "Times New Roman"
+              @extend %card-number
 
 
 

@@ -2,21 +2,78 @@
   font-family: "Bringin";
   src: url("../fonts/Bringin.ttf") format("truetype");
 }
-h1, h2, h3, h4, h5, h6 {
-  font-style: normal;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-}
-
 li, ul {
   list-style: none;
 }
 
-.btn {
+.journal .container .journal-title, .about .container .about-text__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #2c2e37;
+}
+
+.about .container .about-text__words {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #949494;
+}
+
+.about .container .about-text__btn, .header .container .header-info__words .words-btn {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.12em;
+  color: #ffffff;
+  background-color: #36aeea;
+  border: none;
+  border-radius: 4px;
+}
+
+.journal .container .journal-box__third-m .third-box:before, .journal .container .journal-box__third-d .third-box:before, .journal .container .journal-box__firstandsecond .second-box .card-img:before, .journal .container .journal-box__firstandsecond .second-box:before, .journal .container .journal-box__firstandsecond .first-box:before, .about .container:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.journal .container .journal-title:before, .about .container .about-text:before {
+  content: "";
+  background: url("../images/line.png") no-repeat;
+  height: 10px;
+  width: 83px;
+  display: block;
+}
+
+.journal .container .journal-box__third-m .third-box .card-body__title, .journal .container .journal-box__third-d .third-box .card-body__title, .journal .container .journal-box__firstandsecond .second-box .card-body__title, .journal .container .journal-box__firstandsecond .first-box .card-body__title {
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #36aeea;
+}
+
+.journal .container .journal-box__third-m .third-box .card-body__main, .journal .container .journal-box__third-d .third-box .card-body__main, .journal .container .journal-box__firstandsecond .second-box .card-body__main, .journal .container .journal-box__firstandsecond .first-box .card-body__main {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.journal .container .journal-box__third-m .third-box .card-body__text, .journal .container .journal-box__third-d .third-box .card-body__text, .journal .container .journal-box__firstandsecond .second-box .card-body__text, .journal .container .journal-box__firstandsecond .first-box .card-body__text {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #949494;
+}
+
+.journal .container .journal-box__third-m .third-box .card-body__number, .journal .container .journal-box__third-d .third-box .card-body__number, .journal .container .journal-box__firstandsecond .second-box .card-body__number, .journal .container .journal-box__firstandsecond .first-box .card-body__number {
+  font-size: 14px;
+  font-family: "Times New Roman";
+}
+
+.journal .container .journal-box__third-m .third-box .card-body:before, .journal .container .journal-box__third-d .third-box .card-body:before, .journal .container .journal-box__firstandsecond .second-box .card-body:before, .journal .container .journal-box__firstandsecond .first-box .card-body:before {
+  content: "";
+  border: 13px solid transparent;
+  display: block;
+  position: absolute;
+  z-index: 999;
 }
 
 .header {
@@ -111,8 +168,6 @@ li, ul {
   font-size: 18px;
 }
 .header .container .header-info__words .words-btn {
-  color: #ffffff;
-  background-color: #36aeea;
   font-size: 14px;
   padding: 23px 73px;
   margin-top: 6px;
@@ -141,12 +196,9 @@ li, ul {
   top: 26px;
 }
 .about .container:after {
-  content: "";
   background: url("../images/about/legs.png") no-repeat;
   height: 350px;
   width: 350px;
-  display: block;
-  position: absolute;
   left: 465px;
   top: 279px;
 }
@@ -155,31 +207,24 @@ li, ul {
   top: 204px;
 }
 .about .container .about-text:before {
-  content: "";
-  background: url("../images/line.png") no-repeat;
-  height: 10px;
-  width: 83px;
-  display: block;
   padding-bottom: 43px;
 }
 .about .container .about-text__title {
   font-size: 20px;
-  color: #2c2e37;
-  font-weight: 700;
   padding-bottom: 17px;
 }
 .about .container .about-text__words {
   font-size: 14px;
-  color: #949494;
   padding-bottom: 17px;
   line-height: 26px;
   letter-spacing: 0.02em;
 }
 .about .container .about-text__btn {
-  color: #ffffff;
-  background-color: #36aeea;
   font-size: 12px;
   padding: 11px 25px;
+}
+.about .container .about-text__btn:hover {
+  background-color: #0083b3;
 }
 .about .container .about-img {
   position: absolute;
@@ -191,26 +236,19 @@ li, ul {
   max-width: 1170px;
 }
 .journal .container .journal-title {
-  font-family: "Open Sans", sans-serif;
   font-size: 30px;
-  font-weight: 700;
   position: relative;
   padding-top: 114px;
   padding-bottom: 72px;
   letter-spacing: 0.05em;
 }
 .journal .container .journal-title:before {
-  content: "";
-  background: url("../images/line.png") no-repeat;
-  height: 10px;
-  width: 83px;
-  display: block;
   position: absolute;
-  right: 46%;
+  right: 46.5%;
   top: 69px;
 }
 .journal .container .journal-box {
-  box-shadow: 2px 0px 90px 23px rgba(6, 6, 6, 0.13);
+  box-shadow: 2px 0 90px 23px rgba(6, 6, 6, 0.13);
   margin-bottom: 91px;
   display: flex;
 }
@@ -221,12 +259,9 @@ li, ul {
   border: none;
 }
 .journal .container .journal-box__firstandsecond .first-box:before {
-  content: "";
   background: url("../images/journal/heart.png") no-repeat;
   height: 81px;
   width: 81px;
-  display: block;
-  position: absolute;
   left: 147px;
   top: 147px;
 }
@@ -240,50 +275,26 @@ li, ul {
   position: relative;
 }
 .journal .container .journal-box__firstandsecond .first-box .card-body:before {
-  content: "";
-  border: 13px solid transparent;
   border-right: 13px solid #FFFFFF;
-  display: block;
-  position: absolute;
   left: -23px;
   top: 51px;
-  z-index: 999;
 }
 .journal .container .journal-box__firstandsecond .first-box .card-body__title {
-  font-size: 11px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  color: #36aeea;
   padding-bottom: 46px;
 }
 .journal .container .journal-box__firstandsecond .first-box .card-body__main {
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  letter-spacing: 2px;
   padding-bottom: 16px;
 }
 .journal .container .journal-box__firstandsecond .first-box .card-body__text {
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  color: #949494;
   padding-bottom: 24px;
-}
-.journal .container .journal-box__firstandsecond .first-box .card-body__number {
-  font-size: 14px;
-  font-family: "Times New Roman";
 }
 .journal .container .journal-box__firstandsecond .second-box {
   border: none;
 }
 .journal .container .journal-box__firstandsecond .second-box:before {
-  content: "";
   background: url("../images/journal/leaf.png") no-repeat;
   height: 65px;
   width: 65px;
-  display: block;
-  position: absolute;
   right: 160px;
   top: 170px;
   z-index: 999;
@@ -293,40 +304,19 @@ li, ul {
   position: relative;
 }
 .journal .container .journal-box__firstandsecond .second-box .card-body:before {
-  content: "";
-  border: 13px solid transparent;
   border-left: 13px solid #FFFFFF;
-  display: block;
-  position: absolute;
   right: -23px;
   top: 51px;
-  z-index: 999;
 }
 .journal .container .journal-box__firstandsecond .second-box .card-body__title {
-  font-size: 11px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  color: #36aeea;
   padding-bottom: 44px;
+  color: #0083b3;
 }
 .journal .container .journal-box__firstandsecond .second-box .card-body__main {
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #2c2e37;
   padding-bottom: 21px;
 }
 .journal .container .journal-box__firstandsecond .second-box .card-body__text {
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  color: #949494;
   padding-bottom: 24px;
-}
-.journal .container .journal-box__firstandsecond .second-box .card-body__number {
-  font-size: 14px;
-  font-family: "Times New Roman";
 }
 .journal .container .journal-box__firstandsecond .second-box .card-img {
   height: 382px;
@@ -335,23 +325,17 @@ li, ul {
   position: relative;
 }
 .journal .container .journal-box__firstandsecond .second-box .card-img:before {
-  content: "";
   background: url("../images/journal/leaf.png") no-repeat;
   height: 65px;
   width: 65px;
-  display: block;
-  position: absolute;
 }
 .journal .container .journal-box__third-d .third-box {
   border: none;
 }
 .journal .container .journal-box__third-d .third-box:before {
-  content: "";
   background: url("../images/journal/drop.png") no-repeat;
   height: 74px;
   width: 59px;
-  display: block;
-  position: absolute;
   left: 160px;
   top: 147px;
 }
@@ -366,39 +350,19 @@ li, ul {
   position: relative;
 }
 .journal .container .journal-box__third-d .third-box .card-body:before {
-  content: "";
-  border: 13px solid transparent;
   border-bottom: 13px solid #FFFFFF;
-  display: block;
-  position: absolute;
   top: -23px;
   left: 51px;
-  z-index: 999;
 }
 .journal .container .journal-box__third-d .third-box .card-body__title {
-  font-size: 11px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  color: #36aeea;
   padding-bottom: 45px;
+  color: #0083b3;
 }
 .journal .container .journal-box__third-d .third-box .card-body__main {
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  letter-spacing: 2px;
   padding-bottom: 45px;
 }
 .journal .container .journal-box__third-d .third-box .card-body__text {
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  color: #949494;
   padding-bottom: 24px;
-}
-.journal .container .journal-box__third-d .third-box .card-body__number {
-  font-size: 14px;
-  font-family: "Times New Roman";
 }
 .journal .container .journal-box__third-m {
   display: none;
@@ -407,12 +371,9 @@ li, ul {
   border: none;
 }
 .journal .container .journal-box__third-m .third-box:before {
-  content: "";
   background: url("../images/journal/drop.png") no-repeat;
   height: 74px;
   width: 59px;
-  display: block;
-  position: absolute;
   left: 160px;
   top: 147px;
 }
@@ -426,39 +387,19 @@ li, ul {
   position: relative;
 }
 .journal .container .journal-box__third-m .third-box .card-body:before {
-  content: "";
-  border: 13px solid transparent;
   border-right: 13px solid #FFFFFF;
-  display: block;
-  position: absolute;
   left: -23px;
   top: 51px;
-  z-index: 999;
 }
 .journal .container .journal-box__third-m .third-box .card-body__title {
-  font-size: 11px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  color: #36aeea;
   padding-bottom: 45px;
+  color: #0083b3;
 }
 .journal .container .journal-box__third-m .third-box .card-body__main {
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  letter-spacing: 2px;
   padding-bottom: 45px;
 }
 .journal .container .journal-box__third-m .third-box .card-body__text {
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  color: #949494;
   padding-bottom: 24px;
-}
-.journal .container .journal-box__third-m .third-box .card-body__number {
-  font-size: 14px;
-  font-family: "Times New Roman";
 }
 
 /*# sourceMappingURL=style.css.map */
