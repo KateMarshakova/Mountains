@@ -169,48 +169,47 @@ li, ul
     max-width: $cont-size
     position: relative
     font-family: $main-font
+    padding-top: 26px
     &:before
       content: ''
       background: url("../images/about/map.png") no-repeat center center
       height: 528px
       width: 1154px
       display: block
-      position: relative
-      left: 93px
-      top: 26px
-    &:after
-      @extend %before-after
-      background: url("../images/about/legs.png") no-repeat
-      height: 350px
-      width: 350px
-      left: 465px
-      top: 279px
-    .about-text
+      margin-left: 93px
+    .row
       position: absolute
-      top: 204px
-      &:before
-        @extend %before-line
-        padding-bottom: 43px
-      &__title
-        @extend %title
-        font-size: 20px
-        padding-bottom: 17px
-      &__words
-        @extend %text
-        font-size: 14px
-        padding-bottom: 17px
-        line-height: 26px
-        letter-spacing: 0.02em
-      &__btn
-        @extend %btn
-        font-size: 12px
-        padding: 11px 25px
-        &:hover
-          background-color: $color-hover
-    .about-img
-      position: absolute
-      top: -35px
-      padding-left: 60px
+      top: 0
+      .about-text
+        padding-top: 201px
+        &:before
+          @extend %before-line
+          padding-bottom: 43px
+        &__title
+          @extend %title
+          font-size: 20px
+          padding-bottom: 17px
+        &__words
+          @extend %text
+          font-size: 14px
+          padding-bottom: 17px
+          line-height: 26px
+          letter-spacing: 0.02em
+        &__btn
+          @extend %btn
+          font-size: 12px
+          padding: 11px 25px
+          &:hover
+            background-color: $color-hover
+      .about-img
+        &__back
+          position: relative
+          bottom: 37px
+          left: 60px
+        &__front
+          position: absolute
+          left: 469px
+          top: 279px
 .journal
   .container
     max-width: $cont-size

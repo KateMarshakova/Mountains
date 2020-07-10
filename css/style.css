@@ -6,19 +6,19 @@ li, ul {
   list-style: none;
 }
 
-.journal .container .journal-title, .about .container .about-text__title {
+.journal .container .journal-title, .about .container .row .about-text__title {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: #2c2e37;
 }
 
-.about .container .about-text__words {
+.about .container .row .about-text__words {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #949494;
 }
 
-.about .container .about-text__btn, .header .container .header-info__words .words-btn {
+.about .container .row .about-text__btn, .header .container .header-info__words .words-btn {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.12em;
@@ -28,13 +28,13 @@ li, ul {
   border-radius: 4px;
 }
 
-.journal .container .journal-box__third-m .third-box:before, .journal .container .journal-box__third-d .third-box:before, .journal .container .journal-box__firstandsecond .second-box .card-img:before, .journal .container .journal-box__firstandsecond .second-box:before, .journal .container .journal-box__firstandsecond .first-box:before, .about .container:after {
+.journal .container .journal-box__third-m .third-box:before, .journal .container .journal-box__third-d .third-box:before, .journal .container .journal-box__firstandsecond .second-box .card-img:before, .journal .container .journal-box__firstandsecond .second-box:before, .journal .container .journal-box__firstandsecond .first-box:before {
   content: "";
   display: block;
   position: absolute;
 }
 
-.journal .container .journal-title:before, .about .container .about-text:before {
+.journal .container .journal-title:before, .about .container .row .about-text:before {
   content: "";
   background: url("../images/line.png") no-repeat;
   height: 10px;
@@ -184,6 +184,7 @@ li, ul {
   max-width: 1170px;
   position: relative;
   font-family: "Open Sans", sans-serif;
+  padding-top: 26px;
 }
 .about .container:before {
   content: "";
@@ -191,45 +192,44 @@ li, ul {
   height: 528px;
   width: 1154px;
   display: block;
-  position: relative;
-  left: 93px;
-  top: 26px;
+  margin-left: 93px;
 }
-.about .container:after {
-  background: url("../images/about/legs.png") no-repeat;
-  height: 350px;
-  width: 350px;
-  left: 465px;
-  top: 279px;
-}
-.about .container .about-text {
+.about .container .row {
   position: absolute;
-  top: 204px;
+  top: 0;
 }
-.about .container .about-text:before {
+.about .container .row .about-text {
+  padding-top: 201px;
+}
+.about .container .row .about-text:before {
   padding-bottom: 43px;
 }
-.about .container .about-text__title {
+.about .container .row .about-text__title {
   font-size: 20px;
   padding-bottom: 17px;
 }
-.about .container .about-text__words {
+.about .container .row .about-text__words {
   font-size: 14px;
   padding-bottom: 17px;
   line-height: 26px;
   letter-spacing: 0.02em;
 }
-.about .container .about-text__btn {
+.about .container .row .about-text__btn {
   font-size: 12px;
   padding: 11px 25px;
 }
-.about .container .about-text__btn:hover {
+.about .container .row .about-text__btn:hover {
   background-color: #0083b3;
 }
-.about .container .about-img {
+.about .container .row .about-img__back {
+  position: relative;
+  bottom: 37px;
+  left: 60px;
+}
+.about .container .row .about-img__front {
   position: absolute;
-  top: -35px;
-  padding-left: 60px;
+  left: 469px;
+  top: 279px;
 }
 
 .journal .container {
