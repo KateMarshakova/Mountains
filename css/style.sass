@@ -51,29 +51,29 @@ li, ul
   width: 83px
   display: block
 
-%card-title
+%cardTitle
   font-size: 11px
   font-family: $main-font
   font-weight: 700
   color: $blue-color
 
-%card-main
+%cardMain
   font-size: 16px
   font-family: $main-font
   font-weight: 700
   letter-spacing: 2px
 
-%card-text
+%cardText
   font-size: 14px
   font-family: $main-font
   font-weight: 400
   color: $text-color
 
-%card-number
+%cardNumber
   font-size: 14px
-  font-family: "Times New Roman"
+  font-family: "Times New Roman", sans-serif
 
-%before-triangle
+%triangle
   content: ''
   border: 13px solid transparent
   display: block
@@ -234,146 +234,106 @@ li, ul
       &__firstandsecond
         .first-box
           border: none
-          &:before
-            @extend %before-after
-            background: url("../images/journal/heart.png") no-repeat
-            height: 81px
-            width: 81px
-            left: 147px
-            top: 147px
-          .card-img
+          .back
             height: 380px
             width: 380px
             border-radius: 0
+          .front
+            position: absolute
+            height: 81px
+            width: 81px
+            top: 40%
+            left: 20%
           .card-body
             padding: 46px 35px 23px
             position: relative
+            height: 369px
+            width: 378px
             &:before
-              @extend %before-triangle
+              @extend %triangle
               border-right: 13px solid #FFFFFF
               left: -23px
               top: 51px
             &__title
-              @extend %card-title
+              @extend %cardTitle
               padding-bottom: 46px
             &__main
-              @extend %card-main
+              @extend %cardMain
               padding-bottom: 16px
             &__text
-              @extend %card-text
+              @extend %cardText
               padding-bottom: 24px
             &__number
-              @extend %card-number
+              @extend %cardNumber
         .second-box
           border: none
-          &:before
-            @extend %before-after
-            background: url("../images/journal/leaf.png") no-repeat
-            height: 65px
-            width: 65px
-            right: 160px
-            top: 170px
-            z-index: 999
           .card-body
             padding: 46px 54px 20px
             position: relative
+            height: 381px
+            width: 378px
             &:before
-              @extend %before-triangle
+              @extend %triangle
               border-left: 13px solid #FFFFFF
               right: -23px
               top: 51px
             &__title
-              @extend %card-title
+              @extend %cardTitle
               padding-bottom: 44px
               color: $color-hover
             &__main
-              @extend %card-main
+              @extend %cardMain
               padding-bottom: 21px
             &__text
-              @extend %card-text
+              @extend %cardText
               padding-bottom: 24px
             &__number
-              @extend %card-number
-          .card-img
+              @extend %cardNumber
+          .back
             height: 382px
             width: 380px
             border-radius: 0
             position: relative
-            &:before
-              @extend %before-after
-              background: url("../images/journal/leaf.png") no-repeat
-              height: 65px
-              width: 65px
+          .front
+            position: absolute
+            height: 65px
+            width: 65px
+            top: 42%
+            right: 21%
       &__third-d
         .third-box
           border: none
-          &:before
-            @extend %before-after
-            background: url("../images/journal/drop.png") no-repeat
-            height: 74px
-            width: 59px
-            left: 160px
-            top: 147px
-          .card-img
+          .back
             height: 380px
             width: 380px
             border-radius: 0
+          .front
+            position: absolute
+            height: 74px
+            width: 59px
+            top: 20%
+            right: 42%
           .card-body
             height: 382px
             padding: 46px 51px 20px
             position: relative
             &:before
-              @extend %before-triangle
+              @extend %triangle
               border-bottom: 13px solid #FFFFFF
               top: -23px
               left: 51px
             &__title
-              @extend %card-title
+              @extend %cardTitle
               padding-bottom: 45px
               color: $color-hover
             &__main
-              @extend %card-main
+              @extend %cardMain
               padding-bottom: 45px
             &__text
-              @extend %card-text
+              @extend %cardText
               padding-bottom: 24px
             &__number
-              @extend %card-number
-      &__third-m
-        display: none
-        .third-box
-          border: none
-          &:before
-            @extend %before-after
-            background: url("../images/journal/drop.png") no-repeat
-            height: 74px
-            width: 59px
-            left: 160px
-            top: 147px
-          .card-img
-            height: 380px
-            width: 380px
-            border-radius: 0
-          .card-body
-            padding: 46px 51px 20px
-            position: relative
-            &:before
-              @extend %before-triangle
-              border-right: 13px solid #FFFFFF
-              left: -23px
-              top: 51px
-            &__title
-              @extend %card-title
-              padding-bottom: 45px
-              color: $color-hover
-            &__main
-              @extend %card-main
-              padding-bottom: 45px
-            &__text
-              @extend %card-text
-              padding-bottom: 24px
-            &__number
-              @extend %card-number
+              @extend %cardNumber
 
 
 
