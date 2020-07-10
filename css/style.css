@@ -6,19 +6,22 @@ li, ul {
   list-style: none;
 }
 
-.journal .container .journal-title, .about .container .row .about-text__title {
+.wanna .container .wanna-text__title, .journal .container .journal-title, .about .container .row .about-text__title {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: #2c2e37;
+  letter-spacing: 2px;
 }
 
-.about .container .row .about-text__words {
+.wanna .container .wanna-text__footnote .footnote-text, .wanna .container .wanna-text__form .form-phone, .wanna .container .wanna-text__form .form-name, .wanna .container .wanna-text__words, .about .container .row .about-text__words {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #949494;
+  line-height: 26px;
+  letter-spacing: 0.02em;
 }
 
-.about .container .row .about-text__btn, .header .container .header-info__words .words-btn {
+.wanna .container .wanna-text__form .form-btn, .about .container .row .about-text__btn, .header .container .header-info__words .words-btn {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.12em;
@@ -28,7 +31,7 @@ li, ul {
   border-radius: 4px;
 }
 
-.journal .container .journal-title:before, .about .container .row .about-text:before {
+.wanna .container .wanna-text__title:before, .journal .container .journal-title:before, .about .container .row .about-text:before {
   content: "";
   background: url("../images/line.png") no-repeat;
   height: 10px;
@@ -48,6 +51,7 @@ li, ul {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
+  line-height: 23px;
 }
 
 .journal .container .journal-box__third-d .third-box .card-body__text, .journal .container .journal-box__firstandsecond .second-box .card-body__text, .journal .container .journal-box__firstandsecond .first-box .card-body__text {
@@ -71,7 +75,7 @@ li, ul {
 }
 
 .header {
-  background: url("../images/header /bg.png") no-repeat center;
+  background: url("../images/header/bg.png") no-repeat center;
   background-size: cover;
   height: 696px;
 }
@@ -131,7 +135,7 @@ li, ul {
   max-width: 1170px;
 }
 .header .container .header-info {
-  background: url("../images/header /arch.png") no-repeat center;
+  background: url("../images/header/arch.png") no-repeat center;
   height: 326px;
   width: 1140px;
   position: relative;
@@ -205,8 +209,6 @@ li, ul {
 .about .container .row .about-text__words {
   font-size: 14px;
   padding-bottom: 17px;
-  line-height: 26px;
-  letter-spacing: 0.02em;
 }
 .about .container .row .about-text__btn {
   font-size: 12px;
@@ -355,6 +357,84 @@ li, ul {
 }
 .journal .container .journal-box__third-d .third-box .card-body__text {
   padding-bottom: 24px;
+}
+.wanna {
+  background: url("../images/wanna/mount.png") no-repeat center;
+  background-size: cover;
+  height: 650px;
+}
+.wanna .container {
+  max-width: 1170px;
+  position: relative;
+}
+.wanna .container .wanna-text__title {
+  font-size: 20px;
+  padding-top: 147px;
+  padding-bottom: 5px;
+}
+.wanna .container .wanna-text__title:before {
+  position: relative;
+  padding-top: 44px;
+}
+.wanna .container .wanna-text__words {
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+.wanna .container .wanna-text__form {
+  background-color: #FFFFFF;
+  width: 855px;
+  height: 64px;
+  padding-top: 13px;
+  border-radius: 4px;
+}
+.wanna .container .wanna-text__form .form-name {
+  font-size: 16px;
+  border: none;
+  padding-left: 22px;
+}
+.wanna .container .wanna-text__form .form-phone {
+  color: #f0f3f6;
+  font-size: 16px;
+  border: none;
+  border-left: 1px solid #f0f3f6;
+  border-radius: 0;
+  margin-left: 23px;
+  padding-left: 22px;
+}
+.wanna .container .wanna-text__form .form-btn {
+  font-size: 16px;
+  padding: 17px 56px;
+  margin-top: -10px;
+  margin-left: 54px;
+}
+.wanna .container .wanna-text__form .form-btn:hover {
+  background-color: #0083b3;
+}
+.wanna .container .wanna-text__footnote {
+  padding-top: 16px;
+}
+.wanna .container .wanna-text__footnote .footnote-lock {
+  height: 19px;
+  width: 17px;
+  margin-right: 11px;
+  margin-top: 2px;
+}
+.wanna .container .wanna-text__footnote .footnote-text {
+  font-size: 14px;
+  color: #36aeea;
+}
+.wanna .container .wanna-photo__minitree {
+  position: absolute;
+  height: 413px;
+  width: 269px;
+  top: 237px;
+  right: 35px;
+}
+.wanna .container .wanna-photo__bigtree {
+  position: absolute;
+  height: 622px;
+  width: 437px;
+  top: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */
