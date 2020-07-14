@@ -4,6 +4,17 @@
 }
 li, ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .wanna .container .wanna-text__title, .journal .container .journal-title, .about .container .row .about-text__title {
@@ -88,7 +99,7 @@ li, ul {
   max-width: 1170px;
 }
 .header .header-nav .container .nav {
-  padding-top: 31px;
+  height: 30px;
 }
 .header .header-nav .container .nav .nav-logo {
   padding-left: 38px;
@@ -100,24 +111,23 @@ li, ul {
 .header .header-nav .container .nav .nav-logo span {
   color: #949494;
 }
-.header .header-nav .container .nav .nav-menu {
+.header .header-nav .container .nav nav .nav-menu {
   padding-right: 39px;
   padding-left: 0;
   justify-content: space-between;
   border-bottom: 2px solid transparent;
 }
-.header .header-nav .container .nav .nav-menu__item a {
-  text-decoration: none;
+.header .header-nav .container .nav nav .nav-menu__item a {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 12px;
   color: #949494;
   padding-bottom: 8px;
 }
-.header .header-nav .container .nav .nav-menu__item a:hover {
+.header .header-nav .container .nav nav .nav-menu__item a:hover {
   border-bottom: 2px solid #36aeea;
 }
-.header .header-nav .container .nav .nav-menu__item .active {
+.header .header-nav .container .nav nav .nav-menu__item .active {
   border-bottom: 2px solid #36aeea;
 }
 .header .header-nav .container .header-call {
@@ -176,7 +186,7 @@ li, ul {
 
 .about {
   background-color: #f6f4f4;
-  height: 670px;
+  padding-bottom: 116px;
 }
 .about .container {
   max-width: 1170px;

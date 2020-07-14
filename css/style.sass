@@ -19,6 +19,15 @@ $cont-size: 1170px
 
 li, ul
   list-style: none
+  padding: 0
+  margin: 0
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
 
 %title
   font-family: $main-font
@@ -95,7 +104,7 @@ li, ul
     .container
       max-width: $cont-size
       .nav
-        padding-top: 31px
+        height: 30px
         .nav-logo
           padding-left: 38px
           font-family: $logo-font
@@ -104,23 +113,23 @@ li, ul
           color: $blue-color
           span
             color: $text-color
-        .nav-menu
-          padding-right: 39px
-          padding-left: 0
-          justify-content: space-between
-          border-bottom: 2px solid transparent
-          &__item
-            a
-              text-decoration: none
-              font-family: $main-font
-              font-weight: 700
-              font-size: 12px
-              color: $text-color
-              padding-bottom: 8px
-              &:hover
+        nav
+          .nav-menu
+            padding-right: 39px
+            padding-left: 0
+            justify-content: space-between
+            border-bottom: 2px solid transparent
+            &__item
+              a
+                font-family: $main-font
+                font-weight: 700
+                font-size: 12px
+                color: $text-color
+                padding-bottom: 8px
+                &:hover
+                  border-bottom: 2px solid $blue-color
+              .active
                 border-bottom: 2px solid $blue-color
-            .active
-              border-bottom: 2px solid $blue-color
       .header-call
         text-decoration: none
         font-size: 12px
@@ -168,7 +177,7 @@ li, ul
             background-color: $color-hover
 .about
   background-color: $bg-color
-  height: 670px
+  padding-bottom: 116px
   .container
     max-width: $cont-size
     position: relative
