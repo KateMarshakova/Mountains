@@ -98,9 +98,13 @@ a {
 .header .header-nav .container {
   max-width: 1170px;
 }
+.header .header-nav .container .nav {
+  height: 30px;
+}
 .header .header-nav .container .nav .nav-logo {
   padding-left: 38px;
   font-family: "Bringin";
+  height: 58px;
   font-size: 29px;
   color: #36aeea;
 }
