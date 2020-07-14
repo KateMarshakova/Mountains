@@ -29,6 +29,9 @@ h1, h2, h3, h4, h5, h6
 a
   text-decoration: none
 
+p
+  margin: 0
+
 %title
   font-family: $main-font
   font-weight: 700
@@ -92,6 +95,28 @@ a
   display: block
   position: absolute
   z-index: 999
+
+%workNumber
+  color: $blue-color
+  font-size: 16px
+  font-family: $hww-font
+  font-weight: 900
+  background-color: #FFFFFF
+  border: 3px solid $blue-color
+  border-radius: 50%
+  padding: 9px
+  height: 48px
+  width: 48px
+  margin-left: 90px
+
+%workVertical
+  background-image: linear-gradient($gray-elem-color 76%, rgba(255, 255, 255, 0) 0%)
+  background-position: right
+  background-size: 2px 32px
+  background-repeat: repeat-y
+  height: 57px
+  position: relative
+  right: 111px
 
 .header
   background: url("../images/header/bg.png") no-repeat center
@@ -228,7 +253,6 @@ a
       position: relative
       padding-top: 114px
       padding-bottom: 72px
-      letter-spacing: 0.05em
       &:before
         @extend %beforeLine
         position: absolute
@@ -271,7 +295,7 @@ a
               padding-bottom: 16px
             &__text
               @extend %cardText
-              padding-bottom: 24px
+              padding-bottom: 54px
             &__number
               @extend %cardNumber
         .second-box
@@ -295,7 +319,7 @@ a
               padding-bottom: 21px
             &__text
               @extend %cardText
-              padding-bottom: 24px
+              padding-bottom: 54px
             &__number
               @extend %cardNumber
           .back
@@ -340,7 +364,7 @@ a
               padding-bottom: 45px
             &__text
               @extend %cardText
-              padding-bottom: 24px
+              padding-bottom: 54px
             &__number
               @extend %cardNumber
 .wanna
@@ -415,6 +439,59 @@ a
         height: 622px
         width: 437px
         top: 28px
+.work
+  .container
+    max-width: $cont-size
+    .work-title
+      @extend %title
+      font-size: 30px
+      position: relative
+      padding-top: 114px
+      padding-bottom: 72px
+      &:before
+        @extend %beforeLine
+        position: absolute
+        right: 46.5%
+        top: 69px
+    .work-clause
+      position: relative
+      &:before
+        @extend %beforeAfter
+        background-image: linear-gradient(to right, $gray-elem-color 76%, rgba(255,255,255,0) 0%)
+        background-position: bottom
+        background-size: 32px 2px
+        background-repeat: repeat-x
+        width: 78%
+        height: 2px
+        left: 131px
+        top: 22px
+        z-index: -1
+      .number
+        @extend %workNumber
+      .vertical-line
+        @extend %workVertical
+      .image
+        .image-circle
+          position: relative
+          background-color: $gray-elem-color
+          border-radius: 50%
+          height: 180px
+          width: 180px
+          left: 24px
+        .image-back
+          position: absolute
+          left: 30px
+          top: 27px
+        .image-front
+          position: absolute
+          top: 67px
+          left: 72px
+      .text
+        @extend %text
+        padding-top: 30px
+        span
+          font-weight: 900
+          color: black
 
 
 

@@ -17,14 +17,18 @@ a {
   text-decoration: none;
 }
 
-.wanna .container .wanna-text__title, .journal .container .journal-title, .about .container .row .about-text__title {
+p {
+  margin: 0;
+}
+
+.work .container .work-title, .wanna .container .wanna-text__title, .journal .container .journal-title, .about .container .row .about-text__title {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: #2c2e37;
   letter-spacing: 2px;
 }
 
-.wanna .container .wanna-text__footnote .footnote-text, .wanna .container .wanna-text__form .form-phone, .wanna .container .wanna-text__form .form-name, .wanna .container .wanna-text__words, .about .container .row .about-text__words {
+.work .container .work-clause .text, .wanna .container .wanna-text__footnote .footnote-text, .wanna .container .wanna-text__form .form-phone, .wanna .container .wanna-text__form .form-name, .wanna .container .wanna-text__words, .about .container .row .about-text__words {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #949494;
@@ -42,7 +46,13 @@ a {
   border-radius: 4px;
 }
 
-.wanna .container .wanna-text__title:before, .journal .container .journal-title:before, .about .container .row .about-text:before {
+.work .container .work-clause:before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.work .container .work-title:before, .wanna .container .wanna-text__title:before, .journal .container .journal-title:before, .about .container .row .about-text:before {
   content: "";
   background: url("../images/line.png") no-repeat;
   height: 10px;
@@ -83,6 +93,30 @@ a {
   display: block;
   position: absolute;
   z-index: 999;
+}
+
+.work .container .work-clause .number {
+  color: #36aeea;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  background-color: #FFFFFF;
+  border: 3px solid #36aeea;
+  border-radius: 50%;
+  padding: 9px;
+  height: 48px;
+  width: 48px;
+  margin-left: 90px;
+}
+
+.work .container .work-clause .vertical-line {
+  background-image: linear-gradient(#f0f3f6 76%, rgba(255, 255, 255, 0) 0%);
+  background-position: right;
+  background-size: 2px 32px;
+  background-repeat: repeat-y;
+  height: 57px;
+  position: relative;
+  right: 111px;
 }
 
 .header {
@@ -242,7 +276,6 @@ a {
   position: relative;
   padding-top: 114px;
   padding-bottom: 72px;
-  letter-spacing: 0.05em;
 }
 .journal .container .journal-title:before {
   position: absolute;
@@ -290,7 +323,7 @@ a {
   padding-bottom: 16px;
 }
 .journal .container .journal-box__firstandsecond .first-box .card-body__text {
-  padding-bottom: 24px;
+  padding-bottom: 54px;
 }
 .journal .container .journal-box__firstandsecond .second-box {
   border: none;
@@ -314,7 +347,7 @@ a {
   padding-bottom: 21px;
 }
 .journal .container .journal-box__firstandsecond .second-box .card-body__text {
-  padding-bottom: 24px;
+  padding-bottom: 54px;
 }
 .journal .container .journal-box__firstandsecond .second-box .back {
   height: 382px;
@@ -362,7 +395,7 @@ a {
   padding-bottom: 45px;
 }
 .journal .container .journal-box__third-d .third-box .card-body__text {
-  padding-bottom: 24px;
+  padding-bottom: 54px;
 }
 .wanna {
   background: url("../images/wanna/mount.png") no-repeat center;
@@ -441,6 +474,60 @@ a {
   height: 622px;
   width: 437px;
   top: 28px;
+}
+
+.work .container {
+  max-width: 1170px;
+}
+.work .container .work-title {
+  font-size: 30px;
+  position: relative;
+  padding-top: 114px;
+  padding-bottom: 72px;
+}
+.work .container .work-title:before {
+  position: absolute;
+  right: 46.5%;
+  top: 69px;
+}
+.work .container .work-clause {
+  position: relative;
+}
+.work .container .work-clause:before {
+  background-image: linear-gradient(to right, #f0f3f6 76%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 32px 2px;
+  background-repeat: repeat-x;
+  width: 78%;
+  height: 2px;
+  left: 131px;
+  top: 22px;
+  z-index: -1;
+}
+.work .container .work-clause .image .image-circle {
+  position: relative;
+  background-color: #f0f3f6;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  left: 24px;
+}
+.work .container .work-clause .image .image-back {
+  position: absolute;
+  left: 30px;
+  top: 27px;
+}
+.work .container .work-clause .image .image-front {
+  position: absolute;
+  top: 67px;
+  left: 72px;
+}
+.work .container .work-clause .text {
+  padding-top: 30px;
+}
+.work .container .work-clause .text span {
+  font-weight: 900;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
