@@ -21,14 +21,14 @@ p {
   margin: 0;
 }
 
-.work .container .work-title, .wanna .container .wanna-text__title, .journal .container .journal-title, .about .container .row .about-text__title {
+.travel .container .travel-info__title, .work .container .work-title, .wanna .container .wanna-text__title, .journal .container .journal-title, .about .container .row .about-text__title {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: #2c2e37;
   letter-spacing: 2px;
 }
 
-.work .container .work-clause .text, .wanna .container .wanna-text__footnote .footnote-text, .wanna .container .wanna-text__form .form-phone, .wanna .container .wanna-text__form .form-name, .wanna .container .wanna-text__words, .about .container .row .about-text__words {
+.travel .container .travel-info__place .place .place-info__text .text-price__wide, .travel .container .travel-info__place .place .place-info__text .text-price__thin, .travel .container .travel-info__place .place .place-info__text .text-words, .travel .container .travel-info__place .place .place-info__text .text-name, .work .container .work-clause .text, .wanna .container .wanna-text__footnote .footnote-text, .wanna .container .wanna-text__form .form-phone, .wanna .container .wanna-text__form .form-name, .wanna .container .wanna-text__words, .about .container .row .about-text__words {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #949494;
@@ -52,7 +52,7 @@ p {
   position: absolute;
 }
 
-.work .container .work-title:before, .wanna .container .wanna-text__title:before, .journal .container .journal-title:before, .about .container .row .about-text:before {
+.travel .container .travel-info__title:before, .work .container .work-title:before, .wanna .container .wanna-text__title:before, .journal .container .journal-title:before, .about .container .row .about-text:before {
   content: "";
   background: url("../images/line.png") no-repeat;
   height: 10px;
@@ -478,6 +478,7 @@ p {
 
 .work .container {
   max-width: 1170px;
+  padding-bottom: 284px;
 }
 .work .container .work-title {
   font-size: 30px;
@@ -528,6 +529,72 @@ p {
 .work .container .work-clause .text span {
   font-weight: 900;
   color: black;
+}
+
+.travel {
+  background: url("../images/travel/bg.png") no-repeat center;
+  background-size: cover;
+  height: 802px;
+}
+.travel .container {
+  max-width: 1170px;
+  position: relative;
+  bottom: 279px;
+}
+.travel .container .travel-map {
+  position: absolute;
+  right: 171px;
+  top: 108px;
+}
+.travel .container .travel-info {
+  position: relative;
+  top: 0;
+}
+.travel .container .travel-info__title {
+  font-size: 30px;
+  padding-top: 114px;
+  padding-bottom: 72px;
+}
+.travel .container .travel-info__title:before {
+  position: absolute;
+  right: 46.5%;
+  top: 69px;
+}
+.travel .container .travel-info__place .place {
+  position: relative;
+}
+.travel .container .travel-info__place .place .place-info {
+  position: absolute;
+  top: 0;
+}
+.travel .container .travel-info__place .place .place-info__stars {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.travel .container .travel-info__place .place .place-info__text {
+  padding-left: 18px;
+  padding-top: 118px;
+}
+.travel .container .travel-info__place .place .place-info__text .text-name {
+  color: #FFFFFF;
+  font-size: 28px;
+}
+.travel .container .travel-info__place .place .place-info__text .text-words {
+  color: #FFFFFF;
+  font-size: 16px;
+  padding-top: 17px;
+}
+.travel .container .travel-info__place .place .place-info__text .text-price {
+  padding-top: 81px;
+}
+.travel .container .travel-info__place .place .place-info__text .text-price__thin {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.travel .container .travel-info__place .place .place-info__text .text-price__wide {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 26px;
 }
 
 /*# sourceMappingURL=style.css.map */

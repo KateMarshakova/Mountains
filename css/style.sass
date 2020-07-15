@@ -442,6 +442,7 @@ p
 .work
   .container
     max-width: $cont-size
+    padding-bottom: 284px
     .work-title
       @extend %title
       font-size: 30px
@@ -492,7 +493,63 @@ p
         span
           font-weight: 900
           color: black
-
+.travel
+  background: url("../images/travel/bg.png") no-repeat center
+  background-size: cover
+  height: 802px
+  .container
+    max-width: $cont-size
+    position: relative
+    bottom: 279px
+    .travel-map
+      position: absolute
+      right: 171px
+      top: 108px
+    .travel-info
+      position: relative
+      top: 0
+      &__title
+        @extend %title
+        font-size: 30px
+        padding-top: 114px
+        padding-bottom: 72px
+        &:before
+          @extend %beforeLine
+          position: absolute
+          right: 46.5%
+          top: 69px
+      &__place
+        .place
+          position: relative
+          .place-info
+            position: absolute
+            top: 0
+            &__stars
+              padding-left: 10px
+              padding-top: 5px
+            &__text
+              padding-left: 18px
+              padding-top: 118px
+              .text-name
+                @extend %text
+                color: #FFFFFF
+                font-size: 28px
+              .text-words
+                @extend %text
+                color: #FFFFFF
+                font-size: 16px
+                padding-top: 17px
+              .text-price
+                padding-top: 81px
+                &__thin
+                  @extend %text
+                  color: #FFFFFF
+                  font-size: 18px
+                &__wide
+                  @extend %text
+                  color: #FFFFFF
+                  font-weight: 800
+                  font-size: 26px
 
 
 
