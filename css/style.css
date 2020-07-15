@@ -21,7 +21,7 @@ p {
   margin: 0;
 }
 
-.travel .container .travel-info__title, .work .container .work-title, .wanna .container .wanna-text__title, .journal .container .journal-title, .about .container .row .about-text__title {
+.gallery .container .gallery-title, .travel .container .travel-info__title, .work .container .work-title, .wanna .container .wanna-text__title, .journal .container .journal-title, .about .container .row .about-text__title {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: #2c2e37;
@@ -52,7 +52,7 @@ p {
   position: absolute;
 }
 
-.travel .container .travel-info__title:before, .work .container .work-title:before, .wanna .container .wanna-text__title:before, .journal .container .journal-title:before, .about .container .row .about-text:before {
+.gallery .container .gallery-title:before, .travel .container .travel-info__title:before, .work .container .work-title:before, .wanna .container .wanna-text__title:before, .journal .container .journal-title:before, .about .container .row .about-text:before {
   content: "";
   background: url("../images/line.png") no-repeat;
   height: 10px;
@@ -595,6 +595,32 @@ p {
   color: #FFFFFF;
   font-weight: 800;
   font-size: 26px;
+}
+
+.gallery .container {
+  max-width: 1170px;
+  position: relative;
+}
+.gallery .container .gallery-title {
+  font-size: 30px;
+  position: relative;
+  padding-top: 114px;
+  padding-bottom: 72px;
+}
+.gallery .container .gallery-title:before {
+  position: absolute;
+  right: 46.5%;
+  top: 69px;
+}
+.gallery .container .gallery-photo__fourth {
+  padding-top: 30px;
+}
+.gallery .container .gallery-photo__fifth {
+  position: absolute;
+  bottom: 0;
+}
+.gallery .container .gallery-photo__sixth {
+  padding-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

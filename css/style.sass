@@ -550,6 +550,32 @@ p
                   color: #FFFFFF
                   font-weight: 800
                   font-size: 26px
+.gallery
+  .container
+    max-width: $cont-size
+    position: relative
+    .gallery-title
+      @extend %title
+      font-size: 30px
+      position: relative
+      padding-top: 114px
+      padding-bottom: 72px
+      &:before
+        @extend %beforeLine
+        position: absolute
+        right: 46.5%
+        top: 69px
+    .gallery-photo
+      &__fourth
+        padding-top: 30px
+      &__fifth
+        position: absolute
+        bottom: 0
+      &__sixth
+        padding-top: 30px
+
+
+
 
 
 
